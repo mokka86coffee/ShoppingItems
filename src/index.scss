@@ -1,0 +1,90 @@
+@mixin mediaTrfm() {
+        @media screen and (min-width: '993px') {
+            width: 9rem;
+         }   
+}
+
+body {
+    background-color: #eee;
+}
+
+.header {
+    &__cart {
+        cursor: pointer;
+    }
+}
+
+.filter {
+    font-size: .8rem;
+    &__date {
+        &-input {
+            width: 6rem;
+            margin-right: .5rem;
+            font-size: .8rem;
+        }
+        
+        &-icon {
+            font-size: 1.4rem;
+        }
+    }
+    
+    &__stock {
+        
+        &-mark {
+            margin-right: 0.5rem;
+        }
+
+        &-select {
+            width: 9rem;
+        }
+    }
+
+    &__price{
+        &-input {
+            font-size: .8rem;
+            width: 7rem;
+            @include mediaTrfm;
+        }
+    }
+
+    &__caption {
+        width: 5rem;
+        text-align: right;
+
+        &--price-to {
+            width: 2rem;
+        }
+    }
+
+    & .react-calendar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        z-index: 2;
+
+        box-shadow: 0 0 50px #000;
+        display: none;
+
+        &--show {
+            display: block;
+        }
+
+    }
+
+}
+
+.modal {
+    &--show {
+        display: block;
+    }
+}
+
+.login {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}

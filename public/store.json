@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "id": "product1",
+            "Name": "snickers1",
+            "Color": "Red",
+            "Issue date": "01/01/2019",
+            "Price": "9.99",
+            "Raiting": "4",
+            "InStock": false,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        },
+        {
+            "id": "product2",
+            "Name": "snickers2",
+            "Color": "Yellow",
+            "Issue date": "02/02/2019",
+            "Price": "29.99",
+            "Raiting": "4",
+            "InStock": false,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        },
+        {
+            "id": "product3",
+            "Name": "snickers3",
+            "Color": "Green",
+            "Issue date": "03/03/2019",
+            "Price": "19.99",
+            "Raiting": "4",
+            "InStock": true,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        },
+        {
+            "id": "product4",
+            "Name": "snickers4",
+            "Color": "White",
+            "Issue date": "04/04/2019",
+            "Price": "49.99",
+            "Raiting": "3",
+            "InStock": true,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        },
+        {
+            "id": "product5",
+            "Name": "snickers5",
+            "Color": "White",
+            "Issue date": "05/05/2019",
+            "Price": "49.99",
+            "Raiting": "2",
+            "InStock": false,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        },
+        {
+            "id": "product6",
+            "Name": "shoes",
+            "Color": "Black",
+            "Issue date": "05/15/2019",
+            "Price": "49.99",
+            "Raiting": "3",
+            "InStock": false,
+            "Image": "https://avatars.mds.yandex.net/get-pdb/225396/35009c70-4535-4b9a-b14d-7d0c00885ba7/s280"
+        } 
+    ]
+}
