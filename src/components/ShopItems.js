@@ -61,15 +61,15 @@ class ShopItems extends React.Component {
         this.setState({ itemsFiltered: itemsFiltered });
     }
 
-    orderItem = (index) => {
-        const { items } = this.state;
-        
-        items[index].quanity += 1;
+    orderItem = (id) => {
+        let items = [...this.state.items];
+        items = items.map((el) => el.id === id ? {...el, quanity: el.quanity+1} : el);
         
         const cartItems = items.filter( (el) => el.quanity );
+
         const cartCount = cartItems.reduce( (res,el) => res+el.quanity, 0 );
         
-        this.setState({ cartItems, cartCount });
+        this.setState({ cartItems, cartCount, items });
     }
 
     calendarChangeHandler = (calendarRangeFlr) => {
@@ -206,7 +206,7 @@ class ShopItems extends React.Component {
 
                 <main className="row items-wrap">
                 
-                    {this.state.itemsFiltered.length && this.state.itemsFiltered.map((elem,index)=>(
+                    {this.state.itemsFiltered.length && this.state.itemsFiltered.map((elem)=>(
                                 
                     <div className="row col-12 items__item p-4 mb-4 border border-secondary" key={elem.id}>
                         
@@ -227,7 +227,7 @@ class ShopItems extends React.Component {
                                 <button 
                                     type="button" 
                                     className="btn btn-warning"
-                                    onClick={this.orderItem.bind(this,index)}
+                                    onClick={this.orderItem.bind(this,elem.id)}
                                 >
                                     Order
                                 </button>
